@@ -1,48 +1,84 @@
 \documentclass[11pt]{article}
-\usepackage{tabu}
+\usepackage[letterpaper, margin=1.25in]{geometry}
+\usepackage{longtable,tabu}
+\usepackage{graphicx}
+\usepackage{hyperref}
 
 \begin{document}
 \begin{titlepage}
    \vspace*{\stretch{1.0}}
    \begin{center}
       \Large\textbf{Run Tank Stand User Manual}\\
-      \large\textit{Robin Liu - Mech 2018}
-      
+      \bigskip
+      \large\textit{Robin Liu - Mech 2018}\\
+      \bigskip
       Dec 2017
    \end{center}
    \vspace*{\stretch{2.0}}
 \end{titlepage}
 
 \section{Scope}
-This document does not provide the engineering analysis behind the design, but instead just provides some insight into how to use the thing. If you are interested in a (somewhat outdated) analysis of that, search on the drive for my work term report that I wrote on the subject.
+This document does not provide the engineering analysis behind the design, but instead just provides some insight into how to use the thing. If you are interested in a somewhat outdated analysis, search on the drive for my work term report that I wrote on the subject.
 
 This document \textit{does} discuss the water jacket and load cell.
 
-\section{Consumables/Replaceables}
+\section{Consumables/Replaceables Quick Reference Guide}
 \begin{enumerate}
 	\item O Rings are -360 and -366 size. You need at least two of each.
 	\item All bolts that touch the vertical columns are 1/4-20, and should be between 1 and 1.5 inches long, inclusive. For your sanity they should be fully threaded. By my count around 50 are required. Accordingly, about 100 washers and 50 nuts are needed.
 	\item The bolts connecting the base plate to the legs are 3/8-16. They need to be at least 2 inches long, plus or minus 0.25 (longer is ok just makes it progressively more annoying) The partially threaded 2" bolts with 1" threaded are good for this.
 	\item Screws for the feet are \#10-24, and at least 2" long
+	\item Gaskets around the hose inlet and outlet adapters should be replaced as necessary. Any closed cell foam of a decent density will work, as will other decently thick gasket materials (1/8" ish thickness)
 \end{enumerate}
 
 \section{Full Bill of Materials}
 Work in progress
 \begin{center}
-	\begin{tabu} to \linewidth { |X[l]|X[2,l]|X[l]|X[0.7,r]| }
+	\begin{longtabu} to \linewidth { |X[l]|X[2,l]|X[l]|X[0.7,r]| }
 		\hline
 		\textbf{Item Name} & \textbf{Item Description} & \textbf{Suggested Source} & \textbf{Quantity} \\
 		\hline
-		Columns & 1.5"x1.5"x1/8" Steel Angle, 7.5 feet in length & E3 & 4 \\
+		Columns & 1.5"x1.5"x1/8" steel angle, 7.5 feet in length & E3 & 4 \\
 		\hline
-		Top Plate & 1'x1'x1/8" Steel Plate & E3 & 1 \\
+		Top plate & 1'x1'x1/8" steel plate & E3 & 1 \\
 		\hline
-		Base Plate & 13"x24"x1/4" Steel Plate & E3 & 1 \\
+		Base plate & 13"x24"x1/4" steel plate & E3 & 1 \\
 		\hline
-		Legs & 1"x1"x1/8" Square Tube & E3 & 2 \\
+		Legs & 1"x1"x1/8" square tube & E3 & 2 \\
 		\hline
-		
-	\end{tabu}
+		Column support brackets & 1.5"x1.5"x1/8" steel angle, 1.5" long & E3 & 4 \\
+		\hline
+		Column stiffening plates & 12"x3"x1/8" steel plate & E3 & 8 \\
+		\hline
+		Top plate brackets & 1.5"x1.5"x1/8" steel angle, 1.25" long & E3 & 4 \\
+		\hline
+		Feet & Rubber bumper with unthreaded hole & McMaster-Carr\footnote{\url{https://www.mcmaster.com/\#9540k793/=1as9gh9}} & 4 \\
+		\hline
+		Shield panels & 12"x48"x1/4" polycarbonate sheet & E3 & 4\\
+		\hline
+		Feet fasteners & \#10-24, min 2" long, with washers and nuts	 & E5 & 4 \\
+		\hline
+		Leg fasteners & 3/8-16, min 2" long, with washers and nuts & Wherever & 4 \\
+		\hline
+		All other fasteners & 1/4-20, min 1" (ideally 1.5"), with washers and nuts & Wherever & 56 (112 washers) \\
+		\hline
+		Water jacket sealing caps & Machined aluminum caps to seal between the water jacket shell and the run tank & Make it ourselves & 2 \\
+		\hline
+		Water jacket shell & 6" OD/ 7.75" ID polycarbonate tube, 36" length & McMaster-Carr\footnote{\url{https://www.mcmaster.com/\#8585k59/=1aswn3e}} & 1 \\
+		\hline
+		Water jacket inlet adapter & 3D printed custom shape & 3D Print centre & 1 \\
+		\hline
+		Water jacket outlet adapter & 3D printed custom shape & 3D Print centre & 1 \\
+		\hline
+		O Ring - shell side & -366 & McMaster-Carr\footnote{\url{https://www.mcmaster.com/\#9452k391/=1asx6f4}} & 1 \\
+		\hline
+		O Ring - tank side & -360 & McMaster-Carr\footnote{\url{https://www.mcmaster.com/\#9452k516/=1as82k7}} & 1 \\
+		\hline
+		Inlet and outlet adapter gaskets & Generic gasket material, around 1/8" thick & Any place of convenience\footnote{this may never need replacing, as the adapters \textit{can} remain permanently attached to the water jacket shell. Original gaskets were from a foam sample supplied by Rogers Corp} & 2 \\
+		\hline
+		Hose clamps & 8" ones for the adapters around the jacket, and minimum 1.5" ones for the hose-to-adapter connection & Home depot, McMaster-Carr\footnote{\url{https://www.mcmaster.com/\#5011t43/=1atedgj}} & 4 large, 2 small \\
+		\hline
+	\end{longtabu}
 \end{center}
 
 
