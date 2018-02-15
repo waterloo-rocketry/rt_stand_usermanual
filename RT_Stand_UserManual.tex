@@ -12,7 +12,7 @@
       \bigskip
       \large\textit{Robin Liu - Mech 2018}\\
       \bigskip
-      Dec 2017
+      Feb 2018
    \end{center}
    \vspace*{\stretch{2.0}}
 \end{titlepage}
@@ -24,11 +24,11 @@ This document \textit{does} discuss the water jacket and load cell.
 
 \section{Consumables/Replaceables Quick Reference Guide}
 \begin{enumerate}
-	\item O Rings are -360 and -366 size. You need at least two of each.
-	\item All bolts that touch the vertical columns are 1/4-20, and should be between 1 and 1.5 inches long, inclusive. For your sanity they should be fully threaded. By my count around 50 are required. Accordingly, about 100 washers and 50 nuts are needed.
-	\item The bolts connecting the base plate to the legs are 3/8-16. They need to be at least 2 inches long, plus or minus 0.25 (longer is ok just makes it progressively more annoying) The partially threaded 2" bolts with 1" threaded are good for this.
+	\item O Rings are -360 and -366 size. You need at least one of each.
+	\item All bolts that touch the vertical columns (except the bottom four) are 1/4-20, and should be 1 long. Slightly longer or shorter is fine, but 1" is recommended. For your sanity they should be fully threaded. By my count around 50 are required. Accordingly, about 100 washers and 50 nuts are needed.
+	\item The bolts connecting the base plate to the legs are 3/8-16. They need to be at least 2 inches long, plus or minus 0.25 (longer is ok, but becomes progressively more annoying). The partially threaded 2" bolts with 1" threaded are good for this.
+	\item The bolts connecting the columns to the base plate are also 3/8-16. They should be about 1.5 inches long.
 	\item Screws for the feet are \#10-24, and at least 2" long
-	\item Gaskets around the hose inlet and outlet adapters should be replaced as necessary. Any closed cell foam of a decent density will work, as will other decently thick gasket materials (1/8" ish thickness)
 \end{enumerate}
 
 \section{Full Bill of Materials}
@@ -61,21 +61,17 @@ This document \textit{does} discuss the water jacket and load cell.
 		\hline
 		All other fasteners & 1/4-20, min 1" (ideally 1.5"), with washers and nuts & Wherever & 56 (112 washers) \\
 		\hline
-		Water jacket sealing caps & Machined aluminum caps to seal between the water jacket shell and the run tank & Make it ourselves & 2 \\
+		Water jacket sealing caps & Machined aluminum caps to seal between the water jacket shell and the run tank & Make it ourselves & 1 \\
 		\hline
 		Water jacket shell & 6" OD/ 7.75" ID polycarbonate tube, 36" length & McMaster-Carr\footnote{\url{https://www.mcmaster.com/\#8585k59/=1aswn3e}} & 1 \\
 		\hline
-		Water jacket inlet adapter & 3D printed custom shape & 3D Print centre & 1 \\
+		Water jacket inlet adapter & 3D printed custom shape & 3D Print centre or WatIMake & 1 \\
 		\hline
-		Water jacket outlet adapter & 3D printed custom shape & 3D Print centre & 1 \\
+		Water jacket outlet adapter & 3D printed custom shape & 3D Print centre or WatIMake & 1 \\
 		\hline
 		O Ring - shell side & -366 & McMaster-Carr\footnote{\url{https://www.mcmaster.com/\#9452k391/=1asx6f4}} & 1 \\
 		\hline
 		O Ring - tank side & -360 & McMaster-Carr\footnote{\url{https://www.mcmaster.com/\#9452k516/=1as82k7}} & 1 \\
-		\hline
-		Inlet and outlet adapter gaskets & Generic gasket material, around 1/8" thick & Any place of convenience\footnote{this may never need replacing, as the adapters \textit{can} remain permanently attached to the water jacket shell. Original gaskets were from a foam sample supplied by Rogers Corp.} & 2 \\
-		\hline
-		Gasket/foam tape & Some closed cell foam stuff & Home Depot? Lord knows & A wee bit \\
 		\hline
 		Hose clamps & 8" ones for the adapters around the jacket, and minimum 1.5" ones for the hose-to-adapter connection & Home Depot, McMaster-Carr\footnote{\url{https://www.mcmaster.com/\#5011t43/=1atedgj}} & 4 large, 2 small \\
 		\hline
@@ -100,21 +96,23 @@ As much as possible, the stand should be left in an assembled or mostly assemble
 			\item Double nut and double washer hanging the threaded rod from the top plate
 			\item A nice amount of extra threaded rod length sticking out the top (probably at least 2")
 			\item Some method of preventing load cell from unthreading itself (a nut tightened against it is good, threadlocker is also good)
-			\item Proper height so that the blast shields are effective
+			\item Proper tank height so that the blast shields are effective
 		\end{itemize}
-	\item After the tank is hung with all the hose attachments done, affix the last blast shield panels.
+	\item After the tank is hung with all the hose attachments done, affix the last blast shield panel. This panel can go on the outside with only the 4 corner connections. \textbf{This side needs to face away from the viewing area.}
 \end{enumerate}
 
 \subsection{Water Jacket Assembly}
 
 \begin{enumerate}
-	\item Of special note is that the water jacket needs to be assembled alongside the oxidizer tank, as it's held in place by the bolt circles.
-	\item Put O rings into sealing cap
+	\item Of special note is that the water jacket (at least the sealing cap) needs to be assembled alongside the oxidizer tank, as it's held in place by the bolt circles.
+	\item Put O rings into the sealing cap
 	\item Affix inlet and outlet adapters (don't forget to apply gasket and/or other sealing strategies)
-	\item For oxidizer tank sides A and B: Slide sealing cap onto end A of oxidizer tank, slide jacket shell from end B of oxidizer tank (keeping the inlet on the \textbf{\textit{bottom}}, slide second sealing cap on from end B.
-	\item Check for ripped O-Rings
+	\item Slide the sealing cap onto the bottom end of the oxidizer tank. Check for ripped O-Rings
+	\item Assemble the remainder of the oxidizer tank.
+	\item Slide the jacket shell on from the top end of oxidizer tank (keeping the inlet on the \textbf{\textit{bottom}}.
 	\item Use some duct tape to hold the sealing caps onto the water jacket shell.
-	\item After the rest of the tank is assembled, and the whole thing is brought outside and is ready to be hooked onto the load cell, attach the hoses to the inlet and outlet adapters. \textbf{BE AWARE OF WHERE THE HOSES ROUTE}. The open side of the tank stand (final panel) must face away from the spectator area. Therefore the hoses should already be routed through the gap at the bottom of the tank stand.
+	\item The top of the water jacket can be held concentric with the tank by using shims/wedges.
+	\item After the rest of the tank is assembled, and the whole thing is brought outside and is ready to be hooked onto the load cell, attach the hoses to the inlet and outlet adapters. \textbf{Be aware of where the hoses route}. The open side of the tank stand (final panel) must face away from the spectator area. Therefore the hoses should already be routed through the gap at the bottom of the tank stand.
 		\begin{itemize}
 			\item Note that the hoses definitely require nicely tightened hose clamps and probably some sort of sealing (gasket tape or something like that).
 		\end{itemize}
